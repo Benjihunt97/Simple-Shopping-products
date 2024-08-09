@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/e1428b0a9e.js" crossorigin="anonymous"></script>
+  <title>HTML</title>
+  
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+  <header class="p-5 shadow-md">
+    <div class="container mx-auto mb-5 flex items-center">
+      <h2 class="font-bold text-lg text-gray-400">LOGO</h2>
+      <button class="ml-auto">
+        <i class="fa fa-bars"></i>
+      </button>
+    </div>
+    <div class="container mx-auto grid grid-cols-3 gap-3 sm:grid-cols-4">
+      <input type="search" id="search-input" placeholder="Phones" class="p-2 border border-gray-500 rounded-md focus:outline-none w-full text-sm col-span-full sm:col-span-1">
+      
+      <input id="min-price" type="number" max="1200" min="0" class="border border-gray-500 rounded-md p-2 text-sm" placeholder="Minimum £">
+      
+      <input id="max-price" type="number" max="1200" min="0" class="border border-gray-500 rounded-md p-2 text-sm" placeholder="Maximum £">
+      
+      <select name="" id="sort" class="border border-gray-500 rounded-md text-sm p-2 bg-transparent">
+        <option value="relevance" selected>Relevance</option>
+        <option value="price-inc">Price: increase</option>
+        <option value="price-dec">Price: decrease</option>
+        <option value="a-z">a-z</option>
+        <option value="z-a">z-a</option>
+      </select>
+      <button id="apply" class="bg-sky-600 text-white rounded-md py-2 col-span-2 sm:col-span-1 sm:col-start-3">Apply</button>
+      <button id="clear" class="bg-red-600 text-white rounded-md py-2">Clear</button>
+    </div>
+  </header>
+  
+  <main class="p-5">
+    <div id="product-list" class="container mx-auto grid gap-5 sm:grid-cols-2 md:grid-cols-3 lg-grid-cols-4">
+      
+      
+      
+    </div>
+  </main>
+  
+  <script src="main.js"></script>
+</body>
+</html>
