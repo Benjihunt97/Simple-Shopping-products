@@ -104,7 +104,7 @@ const productDisplay = document.getElementById('product-list');
 const productCard = (img, name, currentPrice, oldPrice, sale) => {
             return `
                 <div class="product-card grid gap-4 p-3 shadow-md rounded-md relative overflow-hidden">
-                    <p class="${sale ? 'block' : 'hidden'} bg-red-500 text-white font-semibold absolute -rotate-45 top-2 -left-10 py-2 px-14 shadow-sm shadow-red-800 z-50">SALE</p>
+                    <p class="${sale ? 'block' : 'hidden'} bg-red-500 text-white font-semibold absolute -rotate-45 top-3 -left-10 py-2 px-14 shadow-sm shadow-red-800 z-50">SALE</p>
                     <img class="min-h-[275px] max-h-[275px] mx-auto object-cover sm:scale-[.75]" src="${img}" alt="${name}">
                     <div class="grid">
                         <h2 class="title font-semibold text-sm max-w-[30ch]">${name}</h2>
